@@ -7,12 +7,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  const NAME = 'Assassins Creed'
-  const SYMBOL = 'AC'
-  const COST = ethers.utils.parseUnits('10', 'ether')
-  const MAX_SUPPLY = 25
+  const NAME = 'REAL CO'
+  const SYMBOL = 'REAL'
+  const COST = ethers.utils.parseUnits('1', 'ether')
+  const MAX_SUPPLY = 20
   const NFT_MINT_DATE = (Date.now() + 60000).toString().slice(0,10)
-  const IPFS_METADATA_URI = "ipfs://QmQPEMsfd1tJnqYPbnTQCjoa8vczfsV1FmqZWgRdNQ7z3g/"
+  const IPFS_METADATA_URI = "ipfs://bafybeifmzzkt25ahxq77oeh4qycxaco4mxgkal6uhr7p6trulpzr7bufwi/"
  
   // Deploy Token
   const NFT = await hre.ethers.getContractFactory('NFT')

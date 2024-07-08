@@ -8,11 +8,11 @@ const tokens = (n) => {
 const ether = tokens;
 
 describe("NFT", () => {
-  const NAME = "Assassins Creed";
-  const SYMBOL = "AC";
-  const COST = ether(10);
-  const MAX_SUPPLY = 25;
-  const BASE_URI = "ipfs://QmQPEMsfd1tJnqYPbnTQCjoa8vczfsV1FmqZWgRdNQ7z3g/";
+  const NAME = "REAL CO";
+  const SYMBOL = "REAl";
+  const COST = ether(1);
+  const MAX_SUPPLY = 20;
+  const BASE_URI = "https://tan-blonde-chameleon-175.mypinata.cloud/ipfs/QmZyDKFWtthxZ4hTh7ERcvJzKdMw7TPuShuoa4RqypiVZj/";
 
   let nft, deployer, minter;
 

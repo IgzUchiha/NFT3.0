@@ -5,7 +5,7 @@ import { ethers } from 'ethers'
 import preview from '../preview.png'
 // Components
 import Top from './Top';
-
+// import Sizing from './Sizing'
 import Navigation from './Navigation';
 import Data from './Data';
 import Loading from './Loading';
@@ -72,7 +72,7 @@ function App() {
       
       <Navigation account={account} />
 
-      <h1 className='my-4 text-center'>AC Universe NFTS</h1>
+      <h1 className='my-4 text-center'>REAL HOODIE NFTS</h1>
 
       {isLoading ? (
         <Loading />
@@ -84,14 +84,14 @@ function App() {
               {balance > 0 ? (
                 <div className='text-center'>
                   <img
-                    src={`https://gateway.pinata.cloud/ipfs/QmQPEMsfd1tJnqYPbnTQCjoa8vczfsV1FmqZWgRdNQ7z3g/${balance.toString()}.png`}
+                    src={`https://tan-blonde-chameleon-175.mypinata.cloud/ipfs/QmZyDKFWtthxZ4hTh7ERcvJzKdMw7TPuShuoa4RqypiVZj/${balance.toString()}.png`}
                     alt="Open Punk"
                     width="400px"
                     height="400px"
                   />
                 </div>
               ) : (
-                <img src={preview} alt="" />
+                <img src={preview} alt="Preview" style={{ maxWidth: '100%', height: 'auto' }}/>
               )}
             </Col>
 
@@ -114,6 +114,14 @@ function App() {
             balance={balance}
             setIsLoading={setIsLoading}
             />
+
+            {/* <Sizing
+            provider={provider}
+            nft={nft}
+            cost={cost}
+            balance={balance}
+            setIsLoading={setIsLoading}
+            /> */}
           </Col>
         </Row>
           

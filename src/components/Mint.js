@@ -27,7 +27,7 @@ const Mint = ({ provider, nft, cost, setIsLoading }) => {
         <Spinner animation="border" style={{ display: 'block', margin: '0 auto' }} />
       ) : (
         <Form.Group>
-          <Button variant="primary" type="submit" style={{ width: '100%' }}>
+          <Button variant="danger" type="submit" style={{ width: '100%' }}>
             Mint
           </Button>
         </Form.Group>
